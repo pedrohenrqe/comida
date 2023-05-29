@@ -1,297 +1,326 @@
-body{
-    position: relative;
-    width: 1440px;
-    height: 900px;
-    background: #141416;
-}
-
-.linha{
-    position: absolute;
-    width: 1440px;
-    height: 0px;
-    left: 0px;
-    top: 122px;
-    border: 2px solid #C8C8CC;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: rotate(0.16deg);
-}
-
-.linha2{
-    position: absolute;
-    width: 1440px;
-    height: 0px;
-    left: -1px;
-    top: 281px;
-    border: 2px solid #C8C8CC;
-}
-
-.linha3{
-    position: absolute;
-    width: 1440px;
-    height: 0px;
-    left: 0px;
-    top: 377px;
-    border: 2px solid #C8C8CC;
-    transform: rotate(0.16deg);
-}
-
-.linha4{
-    position: absolute;
-    width: 1900px;
-    height: 0px;
-    top: 100px;
-    right: -735px;
-    border: 2px solid #C8C8CC;
-    transform: rotate(89.87deg);
-}
-
-.linha5{
-    position: absolute;
-width: 1900px;
-height: 0px;
-left: -740px;
-top: 100px;
-
-border: 2px solid #C8C8CC;
-transform: rotate(89.87deg);
-}
-
-.icons{
-    position: absolute;
-    width: 196px;
-    height: 35px;
-    left: 1086px;
-    top: 87px;
-}
-
-.menu{
-    position: absolute;
-    width: 491px;
-    height: 30px;
-    left: 214px;
-    top: 94px;
-}
-
-.logo{
-    position: absolute;
-    width: 366px;
-    height: 128px;
-    left: 519px;
-    top: 139px;
-}
-
-.opcoes{
-    position: absolute;
-    width: 467px;
-    height: 52px;
-    left: 500px;
-    top: 303px;
-}
-
-.grade1{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 224px;
-    top: 412px;
-    border: 3px dashed #C8C8CC;
 }
 
-.burguer1{
-    position: absolute;
-    width: 161px;
-    height: 119px;
-    left: 253px;
-    top: 435px;
+/* Centlizar no meio da tela */
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.description{
-    position: absolute;
-    width: 156px;
-    height: 58px;
-    left: 252px;
-    top: 588px;
+
+/*Widht é usado pra largura*/
+body {
+    color: white;
+    background-color: #141414;
+    width: 100%;
 }
 
-.name{
-    position: absolute;
-    width: 200px;
-    height: 42px;
-    left: 234px;
-    top: 658px;
+/*Margin-top da espaço em cima, justify-content: space-between são distribuidos uniformemente na linha (Usado no header), display flex joga pqara direita*/
+header {
+    width: 1200px;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
 }
 
-.grade2{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 481px;
-    top: 412px;
-    border: 3px dashed #C8C8CC;
+.menu {
+    width: 45%;
+    /* background-color: cadetblue; */
+    display: flex;
 }
 
-.burguer2{
-    position: absolute;
-    width: 216.77px;
-    height: 119px;
-    left: 492px;
-    top: 435px;
+/*Centraliza o item, font-size muda o tamanho da fonte*/
+ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
 }
 
-.description2{
-    position: absolute;
-    width: 178px;
-    height: 59px;
-    left: 511px;
-    top: 589px;
+/*Centraliza o texto*/
+.item {
+    text-align: center;
+    width: 80px;
+    list-style: none;
 }
 
-.name2{
-    position: absolute;
-    width: 200px;
-    height: 42px;
-    left: 500px;
-    top: 658px;
+/*Quando o mouse é passado por cima, a linha fica sublinhada (Caso seja para uma classe especifica coloque o nome e depois hover)*/
+.item:hover {
+    border-bottom: 2px solid red;
+    cursor: pointer;
 }
 
-.grade3{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 738px;
-    top: 412px;
-    border: 3px dashed #C8C8CC;
+.icons {
+    /* background-color: blue; */
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.burguer3{
-    position: absolute;
-    width: 161px;
-    height: 161px;
-    left: 766px;
-    top: 410px;
+.icone {
+    margin: 8px;
+    width: 35px;
 }
 
-.description3{
-    position: absolute;
-    width: 230px;
-    height: 59px;
-    left: 740px;
-    top: 589px;
+main {
+    width: 1200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    /* background-color: blueviolet; */
 }
 
-.name3{
-    position: absolute;
-    width: 200px;
-    height: 42px;
-    left: 752px;
-    top: 658px;
+.image {
+    width: 500px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-.grade4{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 994px;
-    top: 412px;
-    border: 3px dashed #C8C8CC;
+.menu2 {
+    width: 60%;
+    /* background-color: blue; */
+    margin-top: 10px;
+}
+/*Padding serve para espaçar o conteudo de algo (Usado para espaçar as palavras do menu2)*/
+.border {
+    font-size: 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    padding: 15px;
+    list-style: none;
 }
 
-.burguer4{
-    position: absolute;
-    width: 191px;
-    height: 154px;
-    left: 1012px;
-    top: 409px;
+.selected {
+    background-color: #951313;
 }
 
-.description4{
-    position: absolute;
-    width: 214px;
-    height: 59px;
-    left: 997px;
-    top: 592px;
+/* Dispay flex fica sempre na classe pai */
+.container {
+    width: 100%;
+    /* background-color: #FF0000; */
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.name4{
-    position: absolute;
-    width: 200px;
-    height: 42px;
-    left: 1011px;
-    top: 658px;
+.card {
+    /* background-color: aquamarine; */
+    /* width: 25%; */
+    /* margin: 1px; */
+    margin-top: 35px;
 }
 
-.grade5{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 220px;
-    top: 740px;
-    border: 2px dashed #C8C8CC;
+.borda {
+    width: 210px;
+    height: 180px;
+    border: 4px dashed #C8C8CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.burguer5{
-    position: absolute;
-    width: 172px;
-    height: 115px;
-    left: 242px;
-    top: 763px;
+.text {
+    /* background-color: darkmagenta; */
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+
 }
 
-.grade6{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 474px;
-    top: 741px;
-    border: 2px dashed #C8C8CC;
+/*border: 1px(Tamanho no qual queremos a borda) solid (Estilo de borda mais comum) #fff (Cor que queremos a borda)*/
+.compra {
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 1px solid #fff;
+    width: 60%;
 }
 
-.burguer6{
-    position: absolute;
-    width: 160px;
-    height: 116px;
-    left: 511px;
-    top: 757px;
+.numero{
+    text-align: center;
+    width: 35%;
 }
 
-.grade7{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 732px;
-    top: 740px;
-    border: 2px dashed #C8C8CC;
+.market {
+    width: 65%;
+    text-align: center;
+    border: 2px solid #FCFCFC;
 }
 
-.burguer7{
-    position: absolute;
-    width: 200px;
-    height: 155px;
-    left: 744px;
-    top: 743px;
+.select {
+    width: 65%;
+    background-color: #951313;
+    text-align: center;
+    border: 2px solid #FCFCFC;
 }
 
-.grade8{
-    box-sizing: border-box;
-    position: absolute;
-    width: 220px;
-    height: 160px;
-    left: 997px;
-    top: 741px;
-    border: 2px dashed #C8C8CC;
+
+/* RESPONSIVO TABLET*/
+@media (max-width: 1024px) {
+
+    /*Widht é usado pra largura*/
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 45%;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 25px;
+        gap: 15px;
+    }
+
+    .item {
+        text-align: center;
+        width: 80px;
+        list-style: none;
+    }
+
+    main {
+        width: 700px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* background-color: blueviolet; */
+    }
+
+    .image {
+        width: 500px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        font-size: 20px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        padding: 15px;
+        list-style: none;
+    }
+
+    .menu2 {
+        width: 100%;
+        /* background-color: blue; */
+        margin-top: 10px;
+        font-family: 'Fontdiner Swanky', cursive;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Fontdiner Swanky', cursive;
+    }
 }
 
-.burguer8{
-    position: absolute;
-    width: 184px;
-    height: 101px;
-    left: 1016px;
-    top: 764px;
+@media (max-width: 767px) {
+
+    /*Widht é usado pra largura*/
+    body {
+        width: 100%;
+    }
+
+    header {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 20%;
+        display: flex;
+        margin-left: 30px;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        font-size: 10px;
+        gap: 10px;
+    }
+
+    .item {
+        text-align: center;
+        width: 80px;
+        list-style: none;
+    }
+
+    main {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        /* background-color: blueviolet; */
+    }
+
+    .icons img{
+        /* background-color: aqua; */
+        background-size: 15px;
+        width: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .image {
+        width: 150px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .border {
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .card img {
+        width: 110px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .borda {
+        width: 140px;
+        height: 140px;
+        border: 4px dashed #C8C8CC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        /* background-color: darkmagenta; */
+        text-align: center;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+ 
+    .compra {
+        /* background-color: darkblue; */
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 5px;
+        border: 1px solid #fff;
+        width: 60%;
+    }
 }
