@@ -4,28 +4,24 @@
     box-sizing: border-box;
 }
 
-/* Centlizar no meio da tela */
 .center {
     margin-left: auto;
     margin-right: auto;
 }
 
-
-/*Widht é usado pra largura*/
 body {
     color: white;
     background-color: #141414;
     width: 100%;
 }
 
-/*Margin-top da espaço em cima, justify-content: space-between são distribuidos uniformemente na linha (Usado no header), display flex joga pqara direita*/
+/*Deixa o menu e ícones alinhado*/
 header {
     width: 1200px;
     margin-top: 20px;
-    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
-}
+} 
 
 .menu {
     width: 45%;
@@ -33,7 +29,7 @@ header {
     display: flex;
 }
 
-/*Centraliza o item, font-size muda o tamanho da fonte*/
+/*Deixa o menu2 centralizado e ao lado um do outro*/
 ul {
     display: flex;
     width: 100%;
@@ -42,21 +38,19 @@ ul {
     font-size: 30px;
 }
 
-/*Centraliza o texto*/
 .item {
     text-align: center;
     width: 80px;
     list-style: none;
 }
 
-/*Quando o mouse é passado por cima, a linha fica sublinhada (Caso seja para uma classe especifica coloque o nome e depois hover)*/
+/*Ao passar o cursor por cima dos nomes ele vai ficar sublinhado com a cor vermelha*/
 .item:hover {
     border-bottom: 2px solid red;
     cursor: pointer;
 }
 
 .icons {
-    /* background-color: blue; */
     width: 25%;
     display: flex;
     justify-content: flex-end;
@@ -67,13 +61,14 @@ ul {
     width: 35px;
 }
 
+/* Os itens da página ficam centralizado */
 main {
     width: 1200px;
     margin-top: 10px;
     margin-bottom: 50px;
-    /* background-color: blueviolet; */
 }
 
+/* Centraliza a imagem do Mr Food */
 .image {
     width: 500px;
     margin-top: 10px;
@@ -81,26 +76,12 @@ main {
     justify-content: center;
 }
 
-.border:hover{
-    background-color: #951313;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    float: left; 
-    padding: 20px 30px;
-}
-
 .menu2 {
     width: 60%;
-    /* background-color: blue; */
     margin-top: 10px;
 }
 
-/*Padding serve para espaçar o conteudo de algo (Usado para espaçar as palavras do menu2)*/
+/*Ajusta as bordas do menu2*/
 .border {
     font-size: 30px;
     border: 2px solid #FFFFFF;
@@ -109,22 +90,19 @@ ul li {
     list-style: none;
 }
 
-/* Dispay flex fica sempre na classe pai */
+/* Deixo as imagens dos hamburguers um ao lado do outro*/
 .container {
     width: 100%;
-    /* background-color: #FF0000; */
     display: grid;
     margin-top: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .card {
-    /* background-color: aquamarine; */
-    /* width: 25%; */
-    /* margin: 1px; */
     margin-top: 35px;
 }
 
+/* Borda dos hambuguers */
 .borda {
     width: 210px;
     height: 180px;
@@ -135,16 +113,13 @@ ul li {
 }
 
 .text {
-    /* background-color: darkmagenta; */
     text-align: center;
     font-size: 20px;
     margin-top: 5px;
 
 }
 
-/*border: 1px(Tamanho no qual queremos a borda) solid (Estilo de borda mais comum) #fff (Cor que queremos a borda)*/
 .compra {
-    /* background-color: darkblue; */
     display: flex;
     justify-content: center;
     font-size: 20px;
@@ -170,7 +145,12 @@ ul li {
     border: 2px solid #FCFCFC;
 }
 
+/* Ao passar o cursor em cima "Buy Now" ele fica vermelho */
 .market:hover{
+    background-color: #951313;
+}
+
+.border:hover{
     background-color: #951313;
 }
 
